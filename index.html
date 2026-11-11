@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IESTMI | Instituto Teológico — Formación Teológica Ministerial</title>
+<meta name="description" content="Instituto de Estudios Superiores en Teología Ministerial Interdenominacional. Licenciatura, Maestría y Doctorado en Teología y 5 diplomados. Modalidad presencial y por Zoom. Sede central: Minatitlán, Veracruz.">
+<meta property="og:title" content="IESTMI | Instituto Teológico">
+<meta property="og:description" content="Formación teológica, capacitación cristiana y preparación para el servicio ministerial. Minatitlán, Veracruz.">
+<meta property="og:image" content="https://iestmimx.github.io/iestmi/img/logo.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/icono.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#16294d;--navy2:#1e3a68;--gold:#c9a227;--gold2:#e6c65c;--cream:#faf7ef;--ink:#232a35;--mut:#5d6475;--card:#fff;--line:#e4ddc9;--wa:#22c064}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3','Segoe UI',system-ui,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:60;background:rgba(22,41,77,.97);box-shadow:0 4px 20px rgba(0,0,0,.3)}
+header .wrap{display:flex;align-items:center;gap:13px;padding-top:9px;padding-bottom:9px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff}
+.logo img{width:50px;height:50px;border-radius:10px;background:#fff;object-fit:contain;padding:2px}
+.logo .t1{font-family:'Playfair Display',serif;font-weight:800;font-size:1.3rem;letter-spacing:.04em;line-height:1}
+.logo .t2{font-size:.72rem;color:var(--gold2);letter-spacing:.18em;text-transform:uppercase}
+nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:#e9edf5;font-weight:600;font-size:.95rem;padding:8px 11px;border-radius:8px}
+nav a:hover{background:rgba(201,162,39,.2);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#231a02;font-weight:800;padding:13px 24px;border-radius:12px;box-shadow:0 8px 20px rgba(201,162,39,.35);transition:.2s;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn.wa{background:var(--wa);color:#fff;box-shadow:0 8px 20px rgba(34,192,100,.35)}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55);box-shadow:none}
+.hero{background:linear-gradient(165deg,var(--navy) 0%,var(--navy2) 60%,#2a4a80 100%);color:#fff;text-align:center}
+.hero .wrap{padding-top:52px;padding-bottom:0}
+.hero .elog{width:132px;height:132px;margin:0 auto 16px;border-radius:22px;background:#fff;padding:6px;box-shadow:0 16px 36px rgba(0,0,0,.35)}
+.hero .elog img{width:100%;height:100%;object-fit:contain}
+.hero .lema{color:var(--gold2);letter-spacing:.3em;text-transform:uppercase;font-weight:700;font-size:.85rem}
+.hero h1{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.12;font-weight:800;margin-top:12px}
+.hero .fname{margin-top:10px;color:#dbe4f2;font-size:1.02rem;max-width:44rem;margin-left:auto;margin-right:auto}
+.hero p.sub{margin:16px auto 0;color:#cdd9ec;max-width:40rem;font-size:1.06rem}
+.hero .cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero figure{margin:38px auto 0;max-width:1020px;border-radius:18px 18px 0 0;overflow:hidden;box-shadow:0 -10px 40px rgba(0,0,0,.3)}
+.hero figure img{width:100%;aspect-ratio:1570/639;object-fit:cover}
+section{padding:64px 0}
+.kicker{color:#9a7d14;font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.8rem;text-align:center}
+h2{font-size:clamp(1.6rem,3.2vw,2.3rem);text-align:center;margin:8px 0 10px;font-weight:800;color:var(--navy)}
+.lead{text-align:center;color:var(--mut);max-width:46rem;margin:0 auto 36px}
+.cols{max-width:56rem;margin:0 auto;color:#3c4453}
+.cols p{margin-bottom:16px}
+.cols .vision{background:#fff;border-left:4px solid var(--gold);border-radius:0 14px 14px 0;padding:18px 22px;box-shadow:0 8px 22px rgba(22,41,77,.07)}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.dat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;box-shadow:0 8px 24px rgba(22,41,77,.06)}
+.dat .ic{font-size:2rem;margin-bottom:8px}
+.dat h3{color:var(--navy);font-size:1.12rem;margin-bottom:6px}
+.dat p{color:var(--mut);font-size:.96rem}
+.prog{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px 26px;display:flex;gap:18px;align-items:flex-start;box-shadow:0 8px 24px rgba(22,41,77,.06)}
+.prog .n{font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:800;color:var(--gold);line-height:1;min-width:52px}
+.prog h3{color:var(--navy);font-size:1.14rem;margin-bottom:5px}
+.prog p{color:var(--mut);font-size:.96rem}
+.progs{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:64rem;margin:0 auto}
+.grados{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:64rem;margin:0 auto}
+.lic{background:linear-gradient(140deg,var(--navy),var(--navy2));color:#fff;border-radius:18px;padding:26px 26px;box-shadow:0 14px 30px rgba(22,41,77,.22)}
+.lic .ic{font-size:2.4rem;margin-bottom:10px}
+.lic h3{font-size:1.35rem;margin-bottom:6px;color:#fff}
+.lic p{color:#d5deee;font-size:.98rem}
+.steps{max-width:52rem;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 30px;box-shadow:0 8px 24px rgba(22,41,77,.06)}
+.steps ol{margin-left:20px;color:#3c4453}
+.steps li{margin-bottom:10px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal img{border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%;box-shadow:0 8px 20px rgba(22,41,77,.14)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.info p{margin-bottom:12px;color:var(--mut)}
+.info b{color:var(--navy)}
+form{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(22,41,77,.06)}
+form input,form select,form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;font:inherit;background:#fffdf7}
+form button{width:100%;justify-content:center}
+footer{background:var(--navy);color:#c6d2e6;padding:36px 0 28px}
+footer .fname{color:#fff;font-family:'Playfair Display',serif;font-weight:800;font-size:1.2rem}
+footer a{color:var(--gold2)}
+.floatwa{position:fixed;right:18px;bottom:18px;z-index:70;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 12px 28px rgba(34,192,100,.45)}
+.cta-center{text-align:center;margin-top:30px}
+@media(max-width:900px){.g3,.progs,.split,.grados{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr)}nav{display:none}.lic{text-align:center}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"IESTMI — Instituto de Estudios Superiores en Teología Ministerial Interdenominacional","description":"Formación teológica, capacitación cristiana y preparación para el servicio ministerial.","image":"https://iestmimx.github.io/iestmi/img/logo.jpg","telephone":"+52-922-102-5440","email":"cesfil_siglo21@hotmail.com","address":{"@type":"PostalAddress","addressLocality":"Minatitlán","addressRegion":"Veracruz","addressCountry":"MX"}}
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio">
+      <img src="img/icono.jpg" alt="Emblema de IESTMI">
+      <span><span class="t1">IESTMI</span><br><span class="t2">Instituto Teológico</span></span>
+    </a>
+    <nav>
+      <a href="#acerca">Acerca de</a>
+      <a href="#programas">Programas</a>
+      <a href="#inscripciones">Inscripciones</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio" style="padding:0">
+  <div class="wrap">
+    <div class="elog"><img src="img/logo.jpg" alt="Logotipo de IESTMI"></div>
+    <div class="lema">Formación · Servicio · Fe</div>
+    <h1>Prepárate para servir con conocimiento y propósito</h1>
+    <p class="fname">Instituto de Estudios Superiores en Teología Ministerial Interdenominacional</p>
+    <p class="sub">El Instituto Teológico IESTMI promueve la preparación teológica y la capacitación cristiana para quienes desean fortalecer su servicio ministerial y contribuir a la formación de discípulos.</p>
+    <div class="cta">
+      <a class="btn wa" href="https://wa.me/529221025440?text=Hola%2C%20quiero%20informes%20de%20los%20programas%20de%20IESTMI" target="_blank" rel="noopener">💬 Informes por WhatsApp</a>
+      <a class="btn ghost" href="#programas">Ver programas</a>
+    </div>
+    <figure><img src="img/hero.webp" alt="Generación de Licenciados en Teología de IESTMI"></figure>
+  </div>
+</section>
+
+<section id="acerca">
+  <div class="wrap">
+    <div class="kicker">Conócenos</div>
+    <h2>Acerca de IESTMI</h2>
+    <p class="lead">Una iniciativa educativa al servicio de la comunidad cristiana evangélica pentecostés.</p>
+    <div class="cols">
+      <p>IESTMI desarrolla un programa y método práctico de estudios teológicos presenciales y por plataforma Zoom, a través de conferencias en iglesias cristianas de la República Mexicana. Convoca a dirigentes de asociaciones religiosas, superintendentes, supervisores, pastores y líderes a prepararse académicamente para servir en sus áreas asignadas.</p>
+      <p>Además, ofrece un programa especial de capacitación integral para iglesias, enfocado en el crecimiento de sus congregantes y en la formación de discípulos dispuestos y comprometidos con compartir su fe a nuevas generaciones.</p>
+      <p class="vision"><b>Nuestra visión educativa:</b> contribuir a una formación que combine conocimiento teológico, compromiso cristiano y servicio a la comunidad.</p>
+    </div>
+    <div class="grid g3" style="margin-top:34px">
+      <div class="dat"><div class="ic">📍</div><h3>Sede central</h3><p>Minatitlán, Veracruz, México.</p></div>
+      <div class="dat"><div class="ic">🏛️</div><h3>Institución de respaldo</h3><p>Centro de Estudios Superiores para la Formación Integral de Líderes (CESFIL A.C.).</p></div>
+      <div class="dat"><div class="ic">🎓</div><h3>Modalidad</h3><p>Estudios presenciales mediante conferencias y capacitación para iglesias, y también por plataforma Zoom.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="programas" style="background:#fff">
+  <div class="wrap">
+    <div class="kicker">Oferta educativa</div>
+    <h2>Programas académicos</h2>
+    <p class="lead">Licenciatura, maestría, doctorado y diplomados de formación teológica para servir con fundamento bíblico en ministerios y organizaciones cristianas.</p>
+    <div class="kicker" style="margin-bottom:14px">Grados</div>
+    <div class="grados">
+      <div class="lic"><div class="ic">📖</div><h3>Licenciatura en Teología</h3><p>Grado de formación teológica para quienes se preparan para el servicio ministerial. Generaciones de licenciados ya egresaron de IESTMI.</p></div>
+      <div class="lic"><div class="ic">🎓</div><h3>Maestría en Teología Multidisciplinaria</h3><p>Posgrado para profundizar la formación teológica con un enfoque multidisciplinario, al servicio del ministerio y la enseñanza.</p></div>
+      <div class="lic"><div class="ic">🏅</div><h3>Doctorado en Teología Cristiana</h3><p>El grado más alto de formación teológica, para líderes y docentes que buscan servir con profundidad académica y compromiso cristiano.</p></div>
+    </div>
+    <div class="kicker" style="margin:26px 0 14px">Diplomados</div>
+    <div class="progs">
+      <div class="prog"><div class="n">01</div><div><h3>Diplomado en Administración Eclesiástica</h3><p>Bases para la organización y administración de la iglesia y sus ministerios.</p></div></div>
+      <div class="prog"><div class="n">02</div><div><h3>Diplomado en Consejería Bíblica</h3><p>Fundamentos bíblicos para acompañar y aconsejar a las personas desde la fe cristiana.</p></div></div>
+      <div class="prog"><div class="n">03</div><div><h3>Diplomado en Educación Infantil</h3><p>Preparación para la enseñanza y formación cristiana de la niñez.</p></div></div>
+      <div class="prog"><div class="n">04</div><div><h3>Diplomado en Educación Juvenil</h3><p>Herramientas para el trabajo educativo y ministerial con jóvenes.</p></div></div>
+      <div class="prog"><div class="n">05</div><div><h3>Diplomado en Asesoría Legal con Énfasis Eclesiástico en México</h3><p>Orientación legal aplicada a las iglesias y asociaciones religiosas en México.</p></div></div>
+      <div class="prog"><div class="n">✦</div><div><h3>Capacitación integral para iglesias</h3><p>Programa especial para el crecimiento de los congregantes y la formación de discípulos comprometidos con compartir su fe.</p></div></div>
+    </div>
+    <p class="lead" style="margin-top:30px;margin-bottom:0">Los diplomados proporcionan bases teológicas para comprender y aplicar la fe cristiana en la vida personal y el entorno, con la Biblia como fundamento principal. Están dirigidos a creyentes que desean crecer espiritualmente y prepararse para funciones ministeriales, educativas, administrativas, de consejería, evangelismo, misiones y pastoreo.</p>
+    <div class="cta-center">
+      <a class="btn wa" href="https://wa.me/529221025440?text=Hola%2C%20quiero%20informes%20de%20requisitos%2C%20fechas%20e%20inscripci%C3%B3n" target="_blank" rel="noopener">💬 ¿Qué programa es adecuado para ti? Consúltanos</a>
+    </div>
+  </div>
+</section>
+
+<section id="inscripciones">
+  <div class="wrap">
+    <div class="kicker">Da el siguiente paso</div>
+    <h2>Inscripciones e informes</h2>
+    <p class="lead">Solicita información actualizada sobre fechas, requisitos y disponibilidad de los programas. Al escribirnos, puedes pedir:</p>
+    <div class="steps">
+      <ol>
+        <li>Catálogo oficial de carreras o programas.</li>
+        <li>Requisitos y documentos de ingreso.</li>
+        <li>Fechas de inscripción y calendario académico.</li>
+        <li>Costos, becas o aportaciones, si corresponden.</li>
+        <li>Duración, modalidad y sede de las clases.</li>
+      </ol>
+    </div>
+    <div class="cta-center">
+      <a class="btn" href="mailto:cesfil_siglo21@hotmail.com">✉️ Solicitar por correo</a>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" style="background:#fff">
+  <div class="wrap">
+    <div class="kicker">Nuestra comunidad</div>
+    <h2>Galería institucional</h2>
+    <p class="lead">Actividades, conferencias, clases y graduaciones de la comunidad educativa de IESTMI.</p>
+    <div class="gal">
+      <img src="img/g1.webp" alt="Conferencia de IESTMI">
+      <img src="img/g2.webp" alt="Clase en sesión">
+      <img src="img/g3.webp" alt="Aula con proyección">
+      <img src="img/g4.webp" alt="Conferencia en salón">
+      <img src="img/g5.webp" alt="Ceremonia de graduación al aire libre">
+      <img src="img/g6.webp" alt="Evento de la comunidad bajo carpa">
+      <img src="img/g7.webp" alt="Graduados de IESTMI">
+      <img src="img/g8.webp" alt="Generación de egresados">
+      <img src="img/g9.webp" alt="Ceremonia de graduación">
+      <img src="img/g10.webp" alt="Foto panorámica de generación">
+      <img src="img/g11.webp" alt="Clase en la iglesia">
+      <img src="img/g12.webp" alt="Panel de disertación">
+      <img src="img/g13.webp" alt="Ceremonia con bandera">
+      <img src="img/g14.webp" alt="Convivio de la comunidad">
+      <img src="img/g15.webp" alt="Clase con presentación">
+      <img src="img/g16.webp" alt="Ceremonia de graduación amplia">
+      <img src="img/g17.webp" alt="Conferencista invitado">
+      <img src="img/g18.webp" alt="Convivio institucional">
+      <img src="img/g19.webp" alt="Graduados al aire libre">
+      <img src="img/g20.webp" alt="Generación de Licenciados en Teología 2012-2015">
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap split">
+    <div class="info">
+      <div class="kicker" style="text-align:left">Estamos para orientarte</div>
+      <h2 style="text-align:left">Contacto</h2>
+      <p>📞 Teléfono y WhatsApp: <b>922 102 5440</b></p>
+      <p>✉️ Correo: <b>cesfil_siglo21@hotmail.com</b></p>
+      <p>📍 Ubicación: <b>Minatitlán, Veracruz, México</b></p>
+      <p>🏛️ Respaldo: <b>CESFIL A.C.</b></p>
+      <p style="margin-top:18px"><a class="btn" href="iestmi.apk" download>📲 Descargar la app</a></p>
+    </div>
+    <form id="formInformes">
+      <input id="fNombre" type="text" placeholder="Tu nombre" required>
+      <select id="fPrograma">
+        <option>Licenciatura en Teología</option>
+        <option>Maestría en Teología Multidisciplinaria</option>
+        <option>Doctorado en Teología Cristiana</option>
+        <option>Diplomado en Administración Eclesiástica</option>
+        <option>Diplomado en Consejería Bíblica</option>
+        <option>Diplomado en Educación Infantil</option>
+        <option>Diplomado en Educación Juvenil</option>
+        <option>Diplomado en Asesoría Legal con Énfasis Eclesiástico</option>
+        <option>Capacitación para mi iglesia</option>
+        <option>Información general</option>
+      </select>
+      <textarea id="fMsg" rows="4" placeholder="Tu mensaje o pregunta" required></textarea>
+      <button class="btn wa" type="submit">💬 Pedir informes por WhatsApp</button>
+    </form>
+  </div>
+  <div class="wrap">
+    <div style="margin-top:26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 26px rgba(22,41,77,.12)">
+      <iframe title="Mapa con la geolocalización de la sede central de IESTMI en Minatitlán, Veracruz" src="https://maps.google.com/maps?q=Minatitl%C3%A1n%2C%20Veracruz%2C%20M%C3%A9xico&amp;z=13&amp;output=embed" style="width:100%;height:330px;border:0;display:block" loading="lazy" allowfullscreen></iframe>
+    </div>
+    <p style="margin-top:10px;color:var(--mut);font-size:.92rem">📍 Geolocalización de la sede central: Minatitlán, Veracruz. Toca el mapa para abrirlo en Google Maps, ver tu ubicación y trazar tu ruta. <a href="https://www.google.com/maps/search/?api=1&amp;query=Minatitl%C3%A1n%2C%20Veracruz%2C%20M%C3%A9xico" target="_blank" rel="noopener">Ver mapa y cómo llegar</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fname">IESTMI · Instituto Teológico</div>
+    <p>Instituto de Estudios Superiores en Teología Ministerial Interdenominacional — Formación · Servicio · Fe</p>
+    <p style="margin-top:8px">Minatitlán, Veracruz · <a href="https://wa.me/529221025440" target="_blank" rel="noopener">WhatsApp 922 102 5440</a> · cesfil_siglo21@hotmail.com · Respaldo CESFIL A.C.</p>
+  </div>
+</footer>
+
+<a class="floatwa" href="https://wa.me/529221025440?text=Hola%2C%20quiero%20informes%20de%20IESTMI" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+if('serviceWorker' in navigator){addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').then(r=>r.update()).catch(()=>{})})}
+document.getElementById('formInformes').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('fNombre').value.trim(),
+        p=document.getElementById('fPrograma').value,
+        m=document.getElementById('fMsg').value.trim();
+  const t='Hola, soy '+n+'. Me interesa: '+p+'. '+m;
+  open('https://wa.me/529221025440?text='+encodeURIComponent(t),'_blank');
+});
+</script>
+</body>
+</html>
