@@ -68,6 +68,14 @@ h2{font-size:clamp(1.6rem,3.2vw,2.3rem);text-align:center;margin:8px 0 10px;font
 .lic .ic{font-size:2.4rem;margin-bottom:10px}
 .lic h3{font-size:1.35rem;margin-bottom:6px;color:#fff}
 .lic p{color:#d5deee;font-size:.98rem}
+.cert-plus{border:2px solid var(--gold);border-radius:18px;background:#fdf8ea;padding:28px 30px;margin-top:34px;text-align:center;box-shadow:0 10px 26px rgba(201,162,39,.18)}
+.cert-plus h3{font-size:1.6rem;color:var(--navy);margin-bottom:8px}
+.cert-plus p{color:#44506b;max-width:44rem;margin:0 auto 16px}
+.respaldo-int{display:flex;gap:22px;align-items:center;border:2px solid #d9e2f0;border-radius:18px;background:#f4f7fc;padding:24px 28px;margin-top:26px}
+.respaldo-int img{width:170px;max-width:40vw;border-radius:10px;background:#fff}
+.respaldo-int h3{color:var(--navy);margin-bottom:6px}
+.respaldo-int p{color:#44506b;font-size:.95rem}
+@media(max-width:760px){.respaldo-int{flex-direction:column;text-align:center}}
 .steps{max-width:52rem;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 30px;box-shadow:0 8px 24px rgba(22,41,77,.06)}
 .steps ol{margin-left:20px;color:#3c4453}
 .steps li{margin-bottom:10px}
@@ -137,6 +145,13 @@ footer a{color:var(--gold2)}
       <div class="dat"><div class="ic">🏛️</div><h3>Institución de respaldo</h3><p>Centro de Estudios Superiores para la Formación Integral de Líderes (CESFIL A.C.).</p></div>
       <div class="dat"><div class="ic">🎓</div><h3>Modalidad</h3><p>Estudios presenciales mediante conferencias y capacitación para iglesias, y también por plataforma Zoom.</p></div>
     </div>
+    <div class="respaldo-int">
+      <img src="img/unesco.jpg" alt="UNESCO — Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura">
+      <div>
+        <h3>Respaldo internacional</h3>
+        <p>Los Grados en Teología, se justifican en el Decreto del 29 de octubre de 2007 y en la 36ª Conferencia General de noviembre en 2011 por la UNESCO, en los Campos y Sectores de la Educación, en base a la Clasificación Internacional Normalizada de la Educación (CINE) considerada en el Campo del Conocimiento de las áreas de Artes y Humanidades en el Sector 2 de Humanidades y numeral 22 clasificación 1: Religión y Teología.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -144,12 +159,13 @@ footer a{color:var(--gold2)}
   <div class="wrap">
     <div class="kicker">Oferta educativa</div>
     <h2>Programas académicos</h2>
-    <p class="lead">Licenciatura, maestría, doctorado y diplomados de formación teológica para servir con fundamento bíblico en ministerios y organizaciones cristianas.</p>
+    <p class="lead">Licenciatura, maestría, doctorado y diplomados de formación teológica, y certificación por experiencia ministerial, para servir con fundamento bíblico en ministerios y organizaciones cristianas.</p>
     <div class="kicker" style="margin-bottom:14px">Grados</div>
     <div class="grados">
       <div class="lic"><div class="ic">📖</div><h3>Licenciatura en Teología</h3><p>Grado de formación teológica para quienes se preparan para el servicio ministerial. Generaciones de licenciados ya egresaron de IESTMI.</p></div>
       <div class="lic"><div class="ic">🎓</div><h3>Maestría en Teología Multidisciplinaria</h3><p>Posgrado para profundizar la formación teológica con un enfoque multidisciplinario, al servicio del ministerio y la enseñanza.</p></div>
       <div class="lic"><div class="ic">🏅</div><h3>Doctorado en Teología Cristiana</h3><p>El grado más alto de formación teológica, para líderes y docentes que buscan servir con profundidad académica y compromiso cristiano.</p></div>
+      <div class="lic"><div class="ic">📜</div><h3>Certificación por Experiencia Ministerial</h3><p>Certificación que reconoce la trayectoria y la experiencia en el servicio ministerial. Pregunte por ella.</p></div>
     </div>
     <div class="kicker" style="margin:26px 0 14px">Diplomados</div>
     <div class="progs">
@@ -161,6 +177,11 @@ footer a{color:var(--gold2)}
       <div class="prog"><div class="n">✦</div><div><h3>Capacitación integral para iglesias</h3><p>Programa especial para el crecimiento de los congregantes y la formación de discípulos comprometidos con compartir su fe.</p></div></div>
     </div>
     <p class="lead" style="margin-top:30px;margin-bottom:0">Los diplomados proporcionan bases teológicas para comprender y aplicar la fe cristiana en la vida personal y el entorno, con la Biblia como fundamento principal. Están dirigidos a creyentes que desean crecer espiritualmente y prepararse para funciones ministeriales, educativas, administrativas, de consejería, evangelismo, misiones y pastoreo.</p>
+    <div class="cert-plus">
+      <h3>Pregunte por nuestra Certificación por Experiencia Ministerial</h3>
+      <p>Un plus independiente de los grados y diplomados: IESTMI certifica la experiencia en el servicio ministerial. Pregunte por sus requisitos.</p>
+      <a class="btn wa" href="https://wa.me/529221025440?text=Hola%2C%20quiero%20informes%20de%20la%20Certificaci%C3%B3n%20por%20Experiencia%20Ministerial" target="_blank" rel="noopener">💬 Preguntar por la certificación</a>
+    </div>
     <div class="cta-center">
       <a class="btn wa" href="https://wa.me/529221025440?text=Hola%2C%20quiero%20informes%20de%20requisitos%2C%20fechas%20e%20inscripci%C3%B3n" target="_blank" rel="noopener">💬 ¿Qué programa es adecuado para ti? Consúltanos</a>
     </div>
@@ -234,6 +255,7 @@ footer a{color:var(--gold2)}
         <option>Licenciatura en Teología</option>
         <option>Maestría en Teología Multidisciplinaria</option>
         <option>Doctorado en Teología Cristiana</option>
+        <option>Certificación por Experiencia Ministerial</option>
         <option>Diplomado en Administración Eclesiástica</option>
         <option>Diplomado en Consejería Bíblica</option>
         <option>Diplomado en Educación Infantil</option>
